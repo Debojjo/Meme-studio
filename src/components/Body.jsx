@@ -5,7 +5,7 @@ export default function Body() {
   const [meme, setMeme] = useState({
     topText: "",
     bottomText: "",
-    imageUrl: "",
+    imageUrl: "face.png",
   });
 
   const [apimemes, setApiMemes] = useState([]);
@@ -55,7 +55,7 @@ export default function Body() {
       setMeme({
         topText: "",
         bottomText: "",
-        imageUrl: "https://i.imgflip.com/1bij.jpg",
+        imageUrl: "face.png",
       });
     });
   }
