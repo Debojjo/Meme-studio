@@ -138,6 +138,7 @@ body {
 @media (max-width: 760px) {
   .header {
     padding: 1rem;
+    gap: 0;
   }
 
   .header--image {
@@ -147,7 +148,7 @@ body {
 
   .header--title {
     margin-top:3px;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .form {
