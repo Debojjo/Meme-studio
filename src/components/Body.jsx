@@ -5,7 +5,7 @@ export default function Body() {
   const [meme, setMeme] = useState({
     topText: "",
     bottomText: "",
-    imageUrl: "face.png",
+    imageUrl: "troll-face.svg", 
   });
 
   const [apimemes, setApiMemes] = useState([]);
@@ -31,11 +31,10 @@ export default function Body() {
   function generateNewImage() {
     const randomIndex = Math.floor(Math.random() * apimemes.length);
     const url = apimemes[randomIndex]?.url || meme.imageUrl;
-    setMeme({
-      topText: "",
-      bottomText: "",
+    setMeme((prev => ({
+      ...prev,
       imageUrl: url,
-    });
+    })));
   }
 
   function handleDownload() {
@@ -55,7 +54,7 @@ export default function Body() {
       setMeme({
         topText: "",
         bottomText: "",
-        imageUrl: "face.png",
+        imageUrl: "troll-face.svg",
       });
     });
   }
