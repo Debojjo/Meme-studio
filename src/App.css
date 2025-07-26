@@ -146,6 +146,7 @@ body {
   }
 
   .header--title {
+    margin-top:3px;
     font-size: 1.5rem;
   }
 
